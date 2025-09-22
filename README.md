@@ -19,7 +19,7 @@ Personal portfolio showcasing academic and personal projects in software develop
 - **Frameworks**: FastAPI, Flask, Django, React  
 - **Databases**: PostgreSQL, MySQL, MongoDB  
 - **Infrastructure**: Docker  
-- **Data & AI**: Pandas, NumPy, PySpark, Kafka, scikit-learn, Genetic Algorithms, Search (BFS, DFS, Dijkstra, A*, Minimax), Reinforcement Learning 
+- **Data & AI**: Pandas, NumPy, PySpark, Kafka, scikit-learn, Genetic Algorithms, Search (BFS, DFS, Dijkstra, A*, Minimax), Machine Learning Basics
 
 ---
 

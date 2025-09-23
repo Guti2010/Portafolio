@@ -33,12 +33,16 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-### 🗄️ Data & Streaming (pair)
-- 🔹 **Proyecto II — DB**  
-  [Repositorio](https://github.com/Guti2010/Proyecto-II--DB) · modelado relacional, consultas y prácticas de SQL.  
-- 🔹 **Kafka**  
-  [Repositorio](https://github.com/Guti2010/Kafka) · pipelines de eventos, productores/consumidores y patrones de mensajería.  
-> *Ambos muestran el puente entre diseño de datos y procesamiento/event-driven.*
+### 🗄️ Data & Streaming (Pair)
+
+- **Proyecto II — DB**  
+  [Repository](https://github.com/Guti2010/Proyecto-II--DB) — End-to-end data sandbox with **Apache Spark**, **PostgreSQL**, and Python. Includes an EDA notebook (`Analisis.ipynb`), a transactions dataset, a ready-to-run **Docker Compose** stack, and an `init-postgres.sql` to seed the DB. Try Spark ML examples from the bundled `spark/examples` tree, tweak configs under `spark/conf`, and adapt the pipeline scripts as you iterate. :contentReference[oaicite:0]{index=0}
+
+- **Kafka**  
+  [Repository](https://github.com/Guti2010/Kafka) — **Kafka + Neo4j** integration in Python that simulates an e-commerce social network. A **producer** emits purchases, follows, reviews, and ratings; a **consumer** writes nodes/relations to Neo4j (`USERS`, `PRODUCTS`, `TRANSACTIONS` with `PURCHASED`, `FOLLOWS`, `REVIEWED`, `RATED`). Comes with **Docker Compose** for Kafka/ZooKeeper/Neo4j, **Poetry** setup, and ready-made **Cypher** examples (`consultasCypher.txt`, `.ipynb`) to analyze the graph. Run `poetry run python main.py` to create topics, generate events, and populate the graph. :contentReference[oaicite:1]{index=1}
+
+> *Together, they connect relational/analytical workflows (Spark + SQL) with real-time, event-driven modeling (Kafka → Neo4j).*
+
 
 ---
 

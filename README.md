@@ -47,12 +47,14 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-### ⚙️ C++ Data Structures (pair)
-- 🔹 **Caso 1 — Estructuras**  
-  [Repositorio](https://github.com/Guti2010/Caso-1-Estructuras) · C++, `nlohmann/json`, `libcurl`.  
-- 🔹 **Caso 3 — Estructuras**  
-  [Repositorio](https://github.com/Guti2010/Caso-3---Estructuras) · C++, servidor HTTP y estructuras personalizadas.  
-> *Implementaciones y prácticas de estructuras de datos + utilidades de red en C++.*
+### ⚙️ C++ Data Structures (Pair)
+
+- **Caso 1 — Estructuras**  
+  [Repository](https://github.com/Guti2010/Caso-1-Estructuras) — Doubly linked list that manages news fetched from **NewsAPI**, using `nlohmann/json` for easy JSON handling. Supports insert, search (by keywords), delete, re-positioning of nodes, “show all” and **top-5** displays. Includes Docker-based build/run notes (with `libcurl`) and a simple CLI to demo the operations.
+
+- **Caso 3 — SMART BOOK READER**  
+  [Repository](https://github.com/Guti2010/Caso-3---Estructuras) — Full C++ app to search phrases/keywords across classic books. Uses **B-Trees** (and hash tables) for fast indexing/lookups, extracts keywords via GPT (NLP preprocessing), serves a **REST-style HTTP API** with `cpp-httplib`, and generates related images via **DALL·E**. Comes with a lightweight **HTML/CSS/JS** frontend, Dockerfile, Makefile, and examples to compile and run the server on port 8080.
+
 
 ---
 

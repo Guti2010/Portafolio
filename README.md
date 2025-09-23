@@ -19,10 +19,17 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-### 📚 Paradigmas y Lenguajes
-- 🔹 **Paradigmas — Lisp/Scheme, Prolog, Bash**  
-  [Repositorio](https://github.com/Guti2010/Paradigmas) · Functional, Logic & Scripting  
-  Ejercicios y mini-apps: números romanos (Scheme), fractales y puzzles lógicos (Prolog), utilidades/juegos en Bash.
+### 📚 Paradigms & Languages
+
+**Paradigms (Lisp/Scheme, Prolog, Bash)**  
+[Repository](https://github.com/Guti2010/Paradigmas)
+
+- **Functional (Scheme):** Roman numerals toolkit — convert Roman ↔ decimal and perform arithmetic (add, subtract, multiply, divide)
+- **Logic/Declarative (Prolog):**
+  - **Fractals with Turtle graphics:** snowflakes, carpets, bowties, honeycombs, stars; includes RGB and random variants with exported images.
+  - **Logic puzzle solver:** boards with burrows, rabbits, foxes, and mushrooms; automatic solving with printable progress.
+  - **Family relations (Latin facts/rules):** births, marriages/divorces, ancestors/descendants; infers kinship (e.g., grandparents, cousins).
+- **Imperative/Scripting (Bash):** **WordShelle** — a Wordle-style CLI game for fruits/vegetables, with a word list and Docker support.
 
 ---
 

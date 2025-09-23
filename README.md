@@ -109,5 +109,5 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 ---
 
 ## 🌐 Contact
-- [LinkedIn](www.linkedin.com/in/alejandro-gutierrez-chaves-856451333)  
+- [LinkedIn]([www.linkedin.com/in/alejandro-gutierrez-chaves-856451333](https://www.linkedin.com/in/alejandro-gutierrez-chaves-856451333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app))  
 - ✉️ alejandrogutierrez@gmail.com

@@ -3,19 +3,52 @@ Personal portfolio showcasing academic and personal projects in software develop
 
 
 ## 🚀 Proyectos | Projects
-- 🔹 **AlgoVis – Visualizador de Algoritmos | Algorithm Visualizer**  
-  [Repositorio](https://github.com/tuusuario/algovis) | React, Tailwind, Docker  
 
-- 🔹 **VEL Space – Tokenización de Activos | RWA Tokenization Platform**  
-  [Repositorio](https://github.com/tuusuario/velspace) | Blockchain, Architecture  
+### ⭐ Proyecto Destacado / Featured
+- 🔹 **AI Game Hub (colaborativo)**  
+  [Repositorio](https://github.com/Guti2010/AI-Game-Hub) · **A\***, **Minimax + Alpha-Beta**, heurísticas, y bases de **ML/RL**  
+  Plataforma colaborativa de juegos y agentes IA: tableros modulares, visualización de búsquedas paso a paso, comparación de heurísticas, y perfiles de jugadores (humano vs IA, IA vs IA). Incluye documentación, ejemplos reproducibles y estructura pensada para extender con nuevos juegos/estrategias.
 
-- 🔹 **QA Testing – Pruebas Automatizadas | Automated Testing**  
-  [Repositorio](https://github.com/tuusuario/qa-tests) | FastAPI, Flask, Django  
+---
+
+### 📚 Paradigmas y Lenguajes
+- 🔹 **Paradigmas — Lisp/Scheme, Prolog, Bash**  
+  [Repositorio](https://github.com/Guti2010/Paradigmas) · Functional, Logic & Scripting  
+  Ejercicios y mini-apps: números romanos (Scheme), fractales y puzzles lógicos (Prolog), utilidades/juegos en Bash.
+
+---
+
+### 🗄️ Data & Streaming (pair)
+- 🔹 **Proyecto II — DB**  
+  [Repositorio](https://github.com/Guti2010/Proyecto-II--DB) · modelado relacional, consultas y prácticas de SQL.  
+- 🔹 **Kafka**  
+  [Repositorio](https://github.com/Guti2010/Kafka) · pipelines de eventos, productores/consumidores y patrones de mensajería.  
+> *Ambos muestran el puente entre diseño de datos y procesamiento/event-driven.*
+
+---
+
+### ⚙️ C++ Data Structures (pair)
+- 🔹 **Caso 1 — Estructuras**  
+  [Repositorio](https://github.com/Guti2010/Caso-1-Estructuras) · C++, `nlohmann/json`, `libcurl`.  
+- 🔹 **Caso 3 — Estructuras**  
+  [Repositorio](https://github.com/Guti2010/Caso-3---Estructuras) · C++, servidor HTTP y estructuras personalizadas.  
+> *Implementaciones y prácticas de estructuras de datos + utilidades de red en C++.*
+
+---
+
+## 🤝 Colaboraciones / Open Source
+
+- 🧩 **Ensamblando un sándwich**  
+  [Repositorio](https://github.com/MoonFoxCake/Ensamblando-un-sandwich) · proyecto educativo colaborativo.
+
+- 🖌️ **DIS_prototipo** *(colaborativo)*  
+  [Repositorio](https://github.com/fmasis25/DIS_prototipo) · **prototipo web** para gestionar **propuestas de proyectos de la VIE del TEC** (sin README propio actualmente).  
+
 
 ---
 
 ## 🛠️ Tech Stack
-- **Languages**: Python, Java, C++, JavaScript  
+- **Languages**: Python, Java, C++, JavaScript, C#  
 - **Frameworks**: FastAPI, Flask, Django, React  
 - **Databases**: PostgreSQL, MySQL, MongoDB  
 - **Infrastructure**: Docker  

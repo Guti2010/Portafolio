@@ -58,13 +58,13 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-## 🤝 Colaboraciones / Open Source
+## Other topics
 
 - 🧩 **Ensamblando un sándwich**  
-  [Repositorio](https://github.com/MoonFoxCake/Ensamblando-un-sandwich) · proyecto educativo colaborativo.
+  [Repository](https://github.com/MoonFoxCake/Ensamblando-un-sandwich) — Educational, collaborative **transpiler** in **Python** that translates a small domain-specific language (DSL) about “sandwich assembly” into executable steps. Shows how to design grammar/rules, parse tokens, and emit target code for a simple runtime.
 
-- 🖌️ **DIS_prototipo** *(colaborativo)*  
-  [Repositorio](https://github.com/fmasis25/DIS_prototipo) · **prototipo web** para gestionar **propuestas de proyectos de la VIE del TEC** (sin README propio actualmente).  
+- 🖌️ **DIS_prototipo** *(collaborative)*  
+  [Repository](https://github.com/fmasis25/DIS_prototipo) — Lightweight **web prototype** to manage **VIE-TEC project proposals** (create, review, and track submissions). Currently used as a proof-of-concept; the repo has no dedicated README yet.
 
 
 ---

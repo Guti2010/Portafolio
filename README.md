@@ -4,10 +4,18 @@ Personal portfolio showcasing academic and personal projects in software develop
 
 ## 🚀 Proyectos | Projects
 
-### ⭐ Proyecto Destacado / Featured
-- 🔹 **AI Game Hub (colaborativo)**  
-  [Repositorio](https://github.com/Guti2010/AI-Game-Hub) · **A\***, **Minimax + Alpha-Beta**, heurísticas, y bases de **ML/RL**  
-  Plataforma colaborativa de juegos y agentes IA: tableros modulares, visualización de búsquedas paso a paso, comparación de heurísticas, y perfiles de jugadores (humano vs IA, IA vs IA). Incluye documentación, ejemplos reproducibles y estructura pensada para extender con nuevos juegos/estrategias.
+### ⭐ Featured Project
+
+**AI Game Hub (collaborative)**  
+[Repository](https://github.com/Guti2010/AI-Game-Hub) · **Minimax + Alpha-Beta** · **A\*** · **Genetic Algorithm (GA)** · Heuristics · ML/RL foundations
+
+AI Game Hub is a compact playground for game AI and search. It includes:
+- **Dots & Boxes** with Minimax + alpha-beta pruning (risk-aware and chain-control heuristics).
+- **Peg Solitaire** with **A\*** and an admissible heuristic, outputting the full solution path.
+- **MountainCar-v0** with **GA**: a 2×3 chromosome mapping \[position, velocity\] → action; fitness by total return, with selection, elitism, crossover, and mutation.
+
+Features: modular \(n×n\) boards, step-by-step search visualization, heuristic comparisons, and player profiles (Human vs AI, AI vs AI). Clean, extensible code with reproducible examples and docs to add new games or strategies.
+
 
 ---
 

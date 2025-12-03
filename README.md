@@ -10,29 +10,29 @@ Personal portfolio showcasing academic and personal projects in software develop
 
 This project is a reproducible ML dashboard for analyzing political-donation data in Costa Rica. It combines a supervised forecasting model (Model A) with an anomaly-surfacing view (Model B), wrapped in an accessible Streamlit UI.
 
-## ML highlights
+- ## ML highlights
 
-- **Model A — Expected Amount Forecasting (per party × month)**
-  - **Task:** supervised regression to estimate the expected donation amount ŷ.
-  - **Signals / features:** election participation flags (presidential/municipal), election-cycle position (`m_ciclo_rem`, `m_ciclo_pos`), recent history (t−1, t−3, t−6) with a user-controlled **history multiplier**, donor structure (unique donors, # donations, **HHI**), composition shares (legal entities / in-kind).
-  - **Training protocol:** time-based hold-out (`split_test_start` in the meta JSON), **median imputation from train only**, and a feature list/version pinned in `modelo1_rf_Amae_meta.json`.
-  - **Model:** `scikit-learn` **RandomForestRegressor** (artifact: `models/modelo1_rf_Amae.joblib`).
-  - **Diagnostics in UI:** predicted ŷ, observed y (optional), residual and a **severity** score `rz = residual / (|ŷ| + 1)` categorized as NORMAL, MODERATE+, HIGH+, HIGH−.
-  - **Scenario engine:** users can override lags or adjust “activity”/“contribution structure” to stress-test ŷ without touching the model weights.
+  - **Model A — Expected Amount Forecasting (per party × month)**
+    - **Task:** supervised regression to estimate the expected donation amount ŷ.
+    - **Signals / features:** election participation flags (presidential/municipal), election-cycle position (`m_ciclo_rem`, `m_ciclo_pos`), recent history (t−1, t−3, t−6) with a user-controlled **history multiplier**, donor structure (unique donors, # donations, **HHI**), composition shares (legal entities / in-kind).
+    - **Training protocol:** time-based hold-out (`split_test_start` in the meta JSON), **median imputation from train only**, and a feature list/version pinned in `modelo1_rf_Amae_meta.json`.
+    - **Model:** `scikit-learn` **RandomForestRegressor** (artifact: `models/modelo1_rf_Amae.joblib`).
+    - **Diagnostics in UI:** predicted ŷ, observed y (optional), residual and a **severity** score `rz = residual / (|ŷ| + 1)` categorized as NORMAL, MODERATE+, HIGH+, HIGH−.
+    - **Scenario engine:** users can override lags or adjust “activity”/“contribution structure” to stress-test ŷ without touching the model weights.
 
-- **Model B — Unusual Behavior Surfacing**
-  - **Input:** precomputed `anomalias.csv` with `anomaly_score` and `anomaly_flag` produced by an external offline pipeline.
-  - **UI:** sortable ranking, timeline with outlier markers, and a proportion view to contextualize the weight of flagged months. (The app treats scores/flags as model outputs and focuses on explainable presentation.)
+  - **Model B — Unusual Behavior Surfacing**
+    - **Input:** precomputed `anomalias.csv` with `anomaly_score` and `anomaly_flag` produced by an external offline pipeline.
+    - **UI:** sortable ranking, timeline with outlier markers, and a proportion view to contextualize the weight of flagged months. (The app treats scores/flags as model outputs and focuses on explainable presentation.)
+  
+  - ## Data & reproducibility
+  
+  - **Schema inference:** robust column guessing for `año_mes`, `partido`, `tipo_contribucion`, `tipo_persona`, `donante`, `monto_real`.
+  - **XLSX → CSV converter:** automatic, with header detection and caching.
+  - **Artifacts under version control:** `.joblib` model + `.json` meta (features, target, split), ensuring repeatable predictions.
+  - **Exports:** filtered CSVs, metrics CSV, and a **print-ready A4 PDF** (same charts, built via Altair→PNG + ReportLab).
 
-## Data & reproducibility
-
-- **Schema inference:** robust column guessing for `año_mes`, `partido`, `tipo_contribucion`, `tipo_persona`, `donante`, `monto_real`.
-- **XLSX → CSV converter:** automatic, with header detection and caching.
-- **Artifacts under version control:** `.joblib` model + `.json` meta (features, target, split), ensuring repeatable predictions.
-- **Exports:** filtered CSVs, metrics CSV, and a **print-ready A4 PDF** (same charts, built via Altair→PNG + ReportLab).
-
-## Stack
-Streamlit (UI) · scikit-learn (ML) · pandas · Altair/Plotly (viz) · vl-convert (vector→PNG) · ReportLab (PDF).
+  - ## Stack
+    Streamlit (UI) · scikit-learn (ML) · pandas · Altair/Plotly (viz) · vl-convert (vector→PNG) · ReportLab (PDF).
 
 
 **AI Game Hub (collaborative)**  

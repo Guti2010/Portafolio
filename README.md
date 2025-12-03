@@ -35,7 +35,7 @@ This project is a reproducible ML dashboard for analyzing political-donation dat
     Streamlit (UI) · scikit-learn (ML) · pandas · Altair/Plotly (viz) · vl-convert (vector→PNG) · ReportLab (PDF).
 
 
-**AI Game Hub (collaborative)**  
+# AI Game Hub (collaborative)  
 [Repository](https://github.com/Guti2010/AI-Game-Hub) · **Minimax + Alpha-Beta** · **A\*** · **Genetic Algorithm (GA)** · Heuristics · ML/RL foundations
 
 AI Game Hub is a compact playground for game AI and search. It includes:

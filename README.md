@@ -4,7 +4,18 @@ Personal portfolio showcasing academic and personal projects in software develop
 
 ## 🚀 Proyectos | Projects
 
-### ⭐ Featured Project
+# Transparency in Political Financing (Costa Rica)
+
+[Repository](https://github.com/miguelc-14/Proyecto-PIDA) • **Streamlit** • **Python** • **Altair/Plotly** • **scikit-learn** • **ReportLab**
+
+A web dashboard to explore and audit political‐donation data in Costa Rica, designed for clarity, traceability, and public access. It brings together three complementary views:
+
+- **Static Analysis:** KPIs, monthly time series, contribution/person-type breakdowns, *Top Donors*, and a party×time heatmap. Exports filtered datasets and metrics to CSV and generates an A4 PDF report with the same charts.
+- **Party Scenarios (Model A):** Build month-by-month scenarios; estimates the **expected amount** and compares it to the **observed amount**, with a severity indicator and a scenario comparator. Includes presets and inline help for non-technical users.
+- **Unusual Behaviors (Model B):** Filterable ranking of atypical months, a timeline view, and proportions to contextualize the weight of highlighted cases.
+
+**Official data sources:** Costa Rica’s TSE (donations; presidential and municipal results) and BCCR (CPI). The app auto-converts **XLSX → CSV** and performs robust column detection.
+
 
 **AI Game Hub (collaborative)**  
 [Repository](https://github.com/Guti2010/AI-Game-Hub) · **Minimax + Alpha-Beta** · **A\*** · **Genetic Algorithm (GA)** · Heuristics · ML/RL foundations

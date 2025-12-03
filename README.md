@@ -24,14 +24,14 @@ This project is a reproducible ML dashboard for analyzing political-donation dat
     - **Input:** precomputed `anomalias.csv` with `anomaly_score` and `anomaly_flag` produced by an external offline pipeline.
     - **UI:** sortable ranking, timeline with outlier markers, and a proportion view to contextualize the weight of flagged months. (The app treats scores/flags as model outputs and focuses on explainable presentation.)
   
-  - ## Data & reproducibility
+- ## Data & reproducibility
   
   - **Schema inference:** robust column guessing for `año_mes`, `partido`, `tipo_contribucion`, `tipo_persona`, `donante`, `monto_real`.
   - **XLSX → CSV converter:** automatic, with header detection and caching.
   - **Artifacts under version control:** `.joblib` model + `.json` meta (features, target, split), ensuring repeatable predictions.
   - **Exports:** filtered CSVs, metrics CSV, and a **print-ready A4 PDF** (same charts, built via Altair→PNG + ReportLab).
 
-  - ## Stack
+- ## Stack
     Streamlit (UI) · scikit-learn (ML) · pandas · Altair/Plotly (viz) · vl-convert (vector→PNG) · ReportLab (PDF).
 
 

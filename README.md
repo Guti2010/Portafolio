@@ -49,6 +49,23 @@ Web platform for the School of Industrial Production (TEC) that centralizes acad
 
 ---
 
+### 🔁 Reverse Proxy — C + Redis Cache + Kubernetes
+[Repository](https://github.com/Guti2010/Reverse-Proxy)
+
+HTTP reverse proxy written in **C** that routes by **Host** header, enforces **API-Key** auth, and adds a shared **Redis** cache with multiple replacement policies (**LRU/LFU/FIFO/MRU/Random**). It’s containerized with **Docker**, deployed on **Kubernetes** via **Helm**, and includes an automated test battery and install guide. :contentReference[oaicite:0]{index=0}
+
+- **Core features:** socket-level HTTP server, dynamic routing (Host → upstream), API-Key checks (env-configurable), cache key Host+path, TTL & replacement policy selection, and standard endpoints (e.g., `/_health`). :contentReference[oaicite:1]{index=1}  
+- **Cache system:** proxy-first lookup → hit returns immediately; on miss → forward to backend, store in Redis, return to client; coherent across replicas. :contentReference[oaicite:2]{index=2}  
+- **Docker:** multi-stage build, minimal runtime image; configuration only via environment variables. :contentReference[oaicite:3]{index=3}  
+- **Kubernetes + Helm:** Deployments/Services for proxy, web, API, and Redis (via chart); proxy exposed as **NodePort**; backends/Redis as **ClusterIP**; readiness/liveness with `/_health`; values managed in `values.yaml`, **ConfigMaps** and **Secrets**. :contentReference[oaicite:4]{index=4}  
+- **Tests:** PowerShell suite validates health, login redirect, session cookies, API protection (valid/invalid API-Key) under a default release/namespace. :contentReference[oaicite:5]{index=5}  
+- **Install (excerpt):**  
+  `docker build -t c-reverse-proxy:dev -f ./proxy/Dockerfile ./proxy` →  
+  `helm upgrade --install proyecto ./proyecto -n rp --create-namespace -f ./proyecto/values.yaml`  
+  (For **kind/minikube**: `kind load docker-image c-reverse-proxy:dev` / `minikube image load c-reverse-proxy:dev`.) :contentReference[oaicite:6]{index=6}
+
+---
+
 ## 🗄️ Data & Streaming (Pair)
 
 - **Proyecto II — DB**  

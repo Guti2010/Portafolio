@@ -26,18 +26,6 @@ Reproducible ML dashboard for Costa Rican political-donation data. Combines a su
 
 ---
 
-### AI Game Hub (collaborative)
-[Repository](https://github.com/Guti2010/AI-Game-Hub) · **Minimax + Alpha-Beta** · **A\*** · **Genetic Algorithm (GA)** · Heuristics · ML/RL foundations
-
-Compact playground for game AI and search:
-- **Dots & Boxes** — Minimax + alpha-beta with risk-aware & chain-control heuristics.  
-- **Peg Solitaire** — **A\*** with an admissible heuristic and full solution trace.  
-- **MountainCar-v0** — **GA** with a 2×3 chromosome mapping \[position, velocity\] → action; selection, elitism, crossover, mutation.  
-
-Features: modular \(n×n\) boards, step-by-step search visualization, heuristic comparisons, and player profiles (Human vs AI, AI vs AI). Clean, extensible code with reproducible examples.
-
----
-
 ### 🧵 Operating Systems / Sistemas Operativos
 
 - **HTTP/1.0 Concurrent Web Server (Go)**  
@@ -50,17 +38,14 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-## 📚 Paradigms & Languages
+### 🗂️ Administrative Management Platform (TEC — EIPI)
+[Repository](https://github.com/LuisFernandoUC/Plataforma-de-Gesti-n-Administrativa)
 
-**Paradigms (Lisp/Scheme, Prolog, Bash)**  
-[Repository](https://github.com/Guti2010/Paradigmas)
-
-- **Functional (Scheme):** Roman numerals toolkit — convert Roman ↔ decimal and perform arithmetic (add, subtract, multiply, divide).  
-- **Logic/Declarative (Prolog):**  
-  - Fractals with Turtle graphics: snowflakes, carpets, bowties, honeycombs, stars; RGB/random variants with exported images.  
-  - Logic puzzle solver: boards with burrows, rabbits, foxes, mushrooms; automatic solving with printable progress.  
-  - Family relations (Latin facts/rules): births, marriages/divorces, ancestors/descendants; kinship inference (e.g., grandparents, cousins).  
-- **Imperative/Scripting (Bash):** **WordShelle** — Wordle-style CLI for fruits/vegetables; Docker support.
+Web platform for the School of Industrial Production (TEC) that centralizes academic/administrative processes with **role-based access**:
+- **Roles:** Teacher, Administrative Assistant, Coordination/Director (Coordinator, Assistant Director, Director).  
+- **Modules:** Profile & CV (editable sections), Special Activities (hours/week), **Inventory** of peripherals (change/repair/retire with status tracking), **Documents** (memorandums, official letters, search/filter), **Forms**, **Schedules** and **Academic Load**, plus **Administration** (users/roles, periods, courses). :contentReference[oaicite:0]{index=0}
+- **Navigation:** clean side menu per role with dedicated routes (e.g., `/panel-docente`, `/inventario/perifericos/solicitudes`, `/admin/roles`). :contentReference[oaicite:1]{index=1}  
+- **Demo (test env):** `docente@itcr.ac.cr`, `asistente@itcr.ac.cr`, `coordinador@itcr.ac.cr`, `directivo@itcr.ac.cr`, `director@itcr.ac.cr` — password `demo123`. :contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -83,6 +68,32 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 - **Caso 3 — SMART BOOK READER**  
   [Repository](https://github.com/Guti2010/Caso-3---Estructuras) — C++ app to search phrases/keywords across classic books. Uses **B-Trees** (and hash tables) for indexing, GPT-based keyword extraction, a **REST** API with `cpp-httplib`, and image generation via **DALL·E**. Includes a lightweight **HTML/CSS/JS** frontend, Dockerfile, Makefile; server runs on port 8080.
+
+---
+
+### AI Game Hub (collaborative)
+[Repository](https://github.com/Guti2010/AI-Game-Hub) · **Minimax + Alpha-Beta** · **A\*** · **Genetic Algorithm (GA)** · Heuristics · ML/RL foundations
+
+Compact playground for game AI and search:
+- **Dots & Boxes** — Minimax + alpha-beta with risk-aware & chain-control heuristics.  
+- **Peg Solitaire** — **A\*** with an admissible heuristic and full solution trace.  
+- **MountainCar-v0** — **GA** with a 2×3 chromosome mapping \[position, velocity\] → action; selection, elitism, crossover, mutation.  
+
+Features: modular \(n×n\) boards, step-by-step search visualization, heuristic comparisons, and player profiles (Human vs AI, AI vs AI). Clean, extensible code with reproducible examples.
+
+---
+
+## 📚 Paradigms & Languages
+
+**Paradigms (Lisp/Scheme, Prolog, Bash)**  
+[Repository](https://github.com/Guti2010/Paradigmas)
+
+- **Functional (Scheme):** Roman numerals toolkit — convert Roman ↔ decimal and perform arithmetic (add, subtract, multiply, divide).  
+- **Logic/Declarative (Prolog):**  
+  - Fractals with Turtle graphics: snowflakes, carpets, bowties, honeycombs, stars; RGB/random variants with exported images.  
+  - Logic puzzle solver: boards with burrows, rabbits, foxes, mushrooms; automatic solving with printable progress.  
+  - Family relations (Latin facts/rules): births, marriages/divorces, ancestors/descendants; kinship inference (e.g., grandparents, cousins).  
+- **Imperative/Scripting (Bash):** **WordShelle** — Wordle-style CLI for fruits/vegetables; Docker support.
 
 ---
 

@@ -19,15 +19,29 @@ Machine learning dashboard for Costa Rican political donation data, designed to 
 - Created an interactive Streamlit dashboard for exploration, ranking, and timeline analysis
 - Added reproducibility support through versioned artifacts, structured exports, and automated report generation
 
-### 🧵 Operating Systems / Sistemas Operativos
+### HTTP/1.0 Concurrent Web Server
+[Repository](https://github.com/Guti2010/Proyecto-SO) • **Go** • **Concurrency** • **Docker**
 
-- **HTTP/1.0 Concurrent Web Server (Go)**  
-  [Repository](https://github.com/Guti2010/Proyecto-SO) · Go · goroutines · worker pool (FIFO) · bounded queue & backpressure · observability  
-  Concurrent HTTP/1.0 server to study how **concurrency, scheduling, and queue depth** impact latency/throughput under CPU-bound and I/O-bound loads. Uses a fixed **worker pool** with a bounded job queue, explicit `Connection: close`, precise `Content-Length`, and uniform JSON responses. Includes health/echo and a small jobs API to run repeatable experiments (p50/p95/p99), plus Docker Compose and a user manual.
+Concurrent HTTP/1.0 server built to study how scheduling, queue depth, and workload type affect latency and throughput under different conditions.
 
-- **Mini-Spark — Distributed Processing Engine (Rust)**  
-  [Repository](https://github.com/Guti2010/Mini-Spark) · Rust · Tokio · Docker · map/filter/flat_map/reduce_by_key/join/shuffle  
-  From-scratch, MapReduce-style engine with **master / workers / client**. The master validates a job’s DAG and slices work into quantums assigned **round-robin** to workers; each worker runs async tasks up to a configurable concurrency. **Control** flows over HTTP+JSON, while heavy data moves via a shared `/data` volume (`/data/input`, `/data/tmp`, `/data/output`). Supports core operators (map, filter, flat_map, **reduce_by_key**, **join**, **shuffle**) with a spilling aggregator for memory pressure, worker **heartbeats**, reassign on failure, and endpoints to submit jobs, check status, and fetch results.
+**Highlights**
+- Implemented a fixed worker pool with a bounded queue and backpressure
+- Designed JSON-based endpoints for repeatable performance experiments
+- Explored CPU-bound and I/O-bound workloads with latency metrics such as p50, p95, and p99
+- Included Docker Compose setup and user documentation for reproducible testing
+
+---
+
+### Mini-Spark — Distributed Processing Engine
+[Repository](https://github.com/Guti2010/Mini-Spark) • **Rust** • **Tokio** • **Docker**
+
+MapReduce-inspired distributed processing engine built from scratch with master, workers, and client components for orchestrating and executing data-processing jobs.
+
+**Highlights**
+- Implemented distributed job orchestration with master-worker coordination
+- Supported operations such as `map`, `filter`, `flat_map`, `reduce_by_key`, `join`, and `shuffle`
+- Added asynchronous worker execution with configurable concurrency
+- Included fault-tolerance features such as heartbeats and work reassignment
 
 ---
 

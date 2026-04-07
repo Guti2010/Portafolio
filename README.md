@@ -1,5 +1,8 @@
-# Portafolio
-Personal portfolio showcasing academic and personal projects in software development, data engineering, AI, and cybersecurity. Built with Python, Docker, and modern web technologies.
+# Portfolio
+
+Final-year Computer Engineering student at Tecnológico de Costa Rica (TEC) with a strong focus on software development and hands-on experience building backend systems, web applications, data-driven solutions, and containerized environments.
+
+This portfolio highlights selected academic and personal projects in software engineering, backend development, distributed systems, data analysis, machine learning foundations, and modern deployment workflows.
 
 ---
 

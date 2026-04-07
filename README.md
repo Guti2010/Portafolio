@@ -6,28 +6,18 @@ This portfolio highlights selected academic and personal projects in software en
 
 ---
 
-## 🚀 Projects
+## 🚀 Featured Projects
 
-### Transparency in Political Financing (CR) — ML/AI Focus
+### Transparency in Political Financing (Costa Rica)
 [Repository](https://github.com/miguelc-14/Proyecto-PIDA) • **Python** • **scikit-learn** • **Streamlit** • **Altair/Plotly** • **ReportLab**
 
-Reproducible ML dashboard for Costa Rican political-donation data. Combines a supervised forecasting model (Model A) with an anomaly-surfacing view (Model B), wrapped in a Streamlit UI.
+Machine learning dashboard for Costa Rican political donation data, designed to support transparency analysis through forecasting and anomaly detection.
 
-- **Model A — Expected Amount Forecasting (party × month)**  
-  Task: supervised regression for ŷ. Features include election flags (presidential/municipal), cycle position (`m_ciclo_rem`, `m_ciclo_pos`), recent history (t−1, t−3, t−6) with a **history multiplier**, donor structure (unique donors, # donations, **HHI**), and composition shares.  
-  Protocol: time-based hold-out (`split_test_start`), **train-only median imputation**, feature list/version pinned in `modelo1_rf_Amae_meta.json`.  
-  Model: `RandomForestRegressor` (`models/modelo1_rf_Amae.joblib`).  
-  UI diagnostics: ŷ, observed y (opt), residuals and **severity** score `rz = residual/(|ŷ|+1)` categorized as NORMAL / MODERATE+ / HIGH+ / HIGH−.  
-  Scenario engine: override lags or adjust “activity/contribution structure” to stress-test ŷ (no retraining).
-
-- **Model B — Unusual Behavior Surfacing**  
-  Input: `anomalias.csv` with `anomaly_score`/`anomaly_flag` from an offline pipeline.  
-  UI: sortable ranking, timeline with outlier markers, and a proportional context view.
-
-- **Data & reproducibility**  
-  Schema inference for common columns; XLSX→CSV converter with caching; artifacts under VC (`.joblib` + meta `.json`); exports (filtered CSVs, metrics CSV, and **A4 PDF** built via Altair→PNG + ReportLab).
-
----
+**Highlights**
+- Built a supervised forecasting workflow to estimate expected donation amounts by party and month
+- Developed an anomaly detection view to surface unusual patterns in donation behavior
+- Created an interactive Streamlit dashboard for exploration, ranking, and timeline analysis
+- Added reproducibility support through versioned artifacts, structured exports, and automated report generation
 
 ### 🧵 Operating Systems / Sistemas Operativos
 

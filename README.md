@@ -18,6 +18,8 @@ Machine learning dashboard for Costa Rican political donation data, designed to 
 - Developed an anomaly detection view to surface unusual patterns in donation behavior
 - Created an interactive Streamlit dashboard for exploration, ranking, and timeline analysis
 - Added reproducibility support through versioned artifacts, structured exports, and automated report generation
+  
+---
 
 ### HTTP/1.0 Concurrent Web Server
 [Repository](https://github.com/Guti2010/Proyecto-SO) • **Go** • **Concurrency** • **Docker**
@@ -45,31 +47,29 @@ MapReduce-inspired distributed processing engine built from scratch with master,
 
 ---
 
-### 🗂️ Administrative Management Platform (TEC — EIPI)
-[Repository](https://github.com/LuisFernandoUC/Plataforma-de-Gesti-n-Administrativa)
+### Administrative Management Platform
+[Repository](https://github.com/LuisFernandoUC/Plataforma-de-Gesti-n-Administrativa) • **Flask** • **React** • **PostgreSQL** • **Docker**
 
-Web platform for the School of Industrial Production (TEC) that centralizes academic/administrative processes with **role-based access**:
-- **Roles:** Teacher, Administrative Assistant, Coordination/Director (Coordinator, Assistant Director, Director).  
-- **Modules:** Profile & CV (editable sections), Special Activities (hours/week), **Inventory** of peripherals (change/repair/retire with status tracking), **Documents** (memorandums, official letters, search/filter), **Forms**, **Schedules** and **Academic Load**, plus **Administration** (users/roles, periods, courses). :contentReference[oaicite:0]{index=0}
-- **Navigation:** clean side menu per role with dedicated routes (e.g., `/panel-docente`, `/inventario/perifericos/solicitudes`, `/admin/roles`). :contentReference[oaicite:1]{index=1}  
-- **Demo (test env):** `docente@itcr.ac.cr`, `asistente@itcr.ac.cr`, `coordinador@itcr.ac.cr`, `directivo@itcr.ac.cr`, `director@itcr.ac.cr` — password `demo123`. :contentReference[oaicite:2]{index=2}
+Role-based web platform designed for the School of Industrial Production at TEC to centralize academic and administrative workflows in a single system.
 
+**Highlights**
+- Implemented role-based access for teachers, administrative staff, and coordination/director roles
+- Developed modules for profiles, special activities, inventory, documents, schedules, academic load, and administration
+- Organized the application around modular workflows and role-specific navigation
+- Built for practical academic and administrative use cases in an educational environment
+  
 ---
 
-### 🔁 Reverse Proxy — C + Redis Cache + Kubernetes
-[Repository](https://github.com/Guti2010/Reverse-Proxy)
+### Reverse Proxy with Redis Cache and Kubernetes
+[Repository](https://github.com/Guti2010/Reverse-Proxy) • **C** • **Redis** • **Docker** • **Kubernetes** • **Helm**
 
-HTTP reverse proxy written in **C** that routes by **Host** header, enforces **API-Key** auth, and adds a shared **Redis** cache with multiple replacement policies (**LRU/LFU/FIFO/MRU/Random**). It’s containerized with **Docker**, deployed on **Kubernetes** via **Helm**, and includes an automated test battery and install guide. :contentReference[oaicite:0]{index=0}
+Low-level HTTP reverse proxy built in C with host-based routing, API-key protection, and a shared Redis cache designed to support multiple replacement strategies.
 
-- **Core features:** socket-level HTTP server, dynamic routing (Host → upstream), API-Key checks (env-configurable), cache key Host+path, TTL & replacement policy selection, and standard endpoints (e.g., `/_health`). :contentReference[oaicite:1]{index=1}  
-- **Cache system:** proxy-first lookup → hit returns immediately; on miss → forward to backend, store in Redis, return to client; coherent across replicas. :contentReference[oaicite:2]{index=2}  
-- **Docker:** multi-stage build, minimal runtime image; configuration only via environment variables. :contentReference[oaicite:3]{index=3}  
-- **Kubernetes + Helm:** Deployments/Services for proxy, web, API, and Redis (via chart); proxy exposed as **NodePort**; backends/Redis as **ClusterIP**; readiness/liveness with `/_health`; values managed in `values.yaml`, **ConfigMaps** and **Secrets**. :contentReference[oaicite:4]{index=4}  
-- **Tests:** PowerShell suite validates health, login redirect, session cookies, API protection (valid/invalid API-Key) under a default release/namespace. :contentReference[oaicite:5]{index=5}  
-- **Install (excerpt):**  
-  `docker build -t c-reverse-proxy:dev -f ./proxy/Dockerfile ./proxy` →  
-  `helm upgrade --install proyecto ./proyecto -n rp --create-namespace -f ./proyecto/values.yaml`  
-  (For **kind/minikube**: `kind load docker-image c-reverse-proxy:dev` / `minikube image load c-reverse-proxy:dev`.) :contentReference[oaicite:6]{index=6}
+**Highlights**
+- Built socket-level HTTP handling and request routing based on the `Host` header
+- Implemented Redis-backed caching with TTL control and replacement policies such as LRU, LFU, FIFO, MRU, and Random
+- Used Docker for containerization and Kubernetes + Helm for deployment and configuration
+- Added health checks and automated test coverage for validation of key behaviors
 
 ---
 

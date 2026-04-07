@@ -222,4 +222,4 @@ Educational transpiler project that parses a small domain-specific language for 
 
 ## 🌐 Contact
 - [LinkedIn](https://www.linkedin.com/in/alejandro-gutierrez-chaves-856451333)
-- ✉️ alejandrogutierrez@gmail.com
+- ✉️ alejandrogutierrezchaves@gmail.com

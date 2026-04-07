@@ -73,25 +73,55 @@ Low-level HTTP reverse proxy built in C with host-based routing, API-key protect
 
 ---
 
-## 🗄️ Data & Streaming (Pair)
+### Relational Data Analysis Sandbox
+[Repository](https://github.com/Guti2010/Proyecto-II--DB) • **PostgreSQL** • **pgAdmin** • **Neo4j** • **Docker Compose**
 
-- **Proyecto II — DB**  
-  [Repository](https://github.com/Guti2010/Proyecto-II--DB) — Dockerized data sandbox with **PostgreSQL** + **pgAdmin** (optional **Neo4j**). Includes an EDA notebook (`Analisis.ipynb`), a transactions CSV, a ready-to-run **Docker Compose** stack, and `init-postgres.sql` to seed aggregated tables (e.g., `Total_Spent_Per_Customer`, `Product_Purchase_Count`). Spin it up, run SQL, and optionally project the same domain into a property graph for exploratory **Cypher** analysis.
+Dockerized data sandbox for relational analysis and exploratory data workflows, combining PostgreSQL, pgAdmin, and optional Neo4j support.
 
-- **Kafka**  
-  [Repository](https://github.com/Guti2010/Kafka) — **Kafka + Neo4j** demo in Python simulating an e-commerce social network. A **producer** emits purchases, follows, reviews, and ratings; a **consumer** writes nodes/relations to Neo4j (`USERS`, `PRODUCTS`, `TRANSACTIONS` with `PURCHASED`, `FOLLOWS`, `REVIEWED`, `RATED`). Includes Docker Compose (Kafka/ZooKeeper/Neo4j), Poetry setup, and ready-made Cypher examples/notebooks to analyze the graph. Run: `poetry run python main.py`.
-
-> *Together, they connect relational/analytical workflows (SQL) with real-time, event-driven modeling (Kafka → Neo4j).*
+**Highlights**
+- Built a ready-to-run environment for SQL exploration and data analysis
+- Included an EDA notebook, transactional data, and seeded aggregate tables
+- Supported both relational querying and optional graph-based exploration with Cypher
+- Used Docker Compose to simplify setup and reproducibility
 
 ---
 
-## ⚙️ C++ Data Structures (Pair)
+### Kafka + Neo4j Demo
+[Repository](https://github.com/Guti2010/Kafka) • **Python** • **Kafka** • **Neo4j** • **Docker Compose**
 
-- **Caso 1 — Estructuras**  
-  [Repository](https://github.com/Guti2010/Caso-1-Estructuras) — Doubly linked list managing news fetched from **NewsAPI**. Uses `nlohmann/json` (JSON) and `libcurl` (HTTP). Supports insert, keyword search, delete, re-positioning of nodes, **top-5** and show-all. Docker-based build/run notes and a simple CLI demo.
+Event-driven demo that simulates an e-commerce social network using Kafka producers and Neo4j consumers to model user activity and relationships.
 
-- **Caso 3 — SMART BOOK READER**  
-  [Repository](https://github.com/Guti2010/Caso-3---Estructuras) — C++ app to search phrases/keywords across classic books. Uses **B-Trees** (and hash tables) for indexing, GPT-based keyword extraction, a **REST** API with `cpp-httplib`, and image generation via **DALL·E**. Includes a lightweight **HTML/CSS/JS** frontend, Dockerfile, Makefile; server runs on port 8080.
+**Highlights**
+- Simulated real-time events such as purchases, follows, reviews, and ratings
+- Modeled graph relationships in Neo4j from streaming event data
+- Included Docker Compose setup for Kafka, ZooKeeper, and Neo4j
+- Added Cypher examples and notebooks for graph analysis and exploration
+
+---
+
+### News Feed Manager
+[Repository](https://github.com/Guti2010/Caso-1-Estructuras) • **C++** • **libcurl** • **nlohmann/json** • **Docker**
+
+C++ application that uses a doubly linked list to manage and explore news articles fetched from NewsAPI.
+
+**Highlights**
+- Implemented article storage and navigation with a doubly linked list
+- Added keyword search, deletion, node repositioning, and top-5 views
+- Integrated external data retrieval using libcurl and JSON parsing
+- Included Docker-based build and execution support
+
+---
+
+### Smart Book Reader
+[Repository](https://github.com/Guti2010/Caso-3---Estructuras) • **C++** • **B-Trees** • **Hash Tables** • **REST API** • **HTML/CSS/JS**
+
+Search-oriented C++ application for exploring classic books through phrase and keyword lookup, supported by structured indexing and a lightweight web interface.
+
+**Highlights**
+- Implemented indexing with B-Trees and hash tables for efficient text search
+- Added keyword extraction and REST-based query support
+- Built a lightweight frontend for interactive exploration
+- Included Dockerfile and Makefile for reproducible setup
 
 ---
 
@@ -107,27 +137,37 @@ Features: modular \(n×n\) boards, step-by-step search visualization, heuristic 
 
 ---
 
-## 📚 Paradigms & Languages
+## Additional Projects
 
-**Paradigms (Lisp/Scheme, Prolog, Bash)**  
-[Repository](https://github.com/Guti2010/Paradigmas)
+### AI Game Hub
+[Repository](https://github.com/Guti2010/AI-Game-Hub) • **Minimax** • **Alpha-Beta Pruning** • **A\*** • **Genetic Algorithms**
 
-- **Functional (Scheme):** Roman numerals toolkit — convert Roman ↔ decimal and perform arithmetic (add, subtract, multiply, divide).  
-- **Logic/Declarative (Prolog):**  
-  - Fractals with Turtle graphics: snowflakes, carpets, bowties, honeycombs, stars; RGB/random variants with exported images.  
-  - Logic puzzle solver: boards with burrows, rabbits, foxes, mushrooms; automatic solving with printable progress.  
-  - Family relations (Latin facts/rules): births, marriages/divorces, ancestors/descendants; kinship inference (e.g., grandparents, cousins).  
-- **Imperative/Scripting (Bash):** **WordShelle** — Wordle-style CLI for fruits/vegetables; Docker support.
+Collection of game AI and search experiments focused on decision-making, heuristics, and optimization techniques.
+
+**Highlights**
+- Implemented Minimax with alpha-beta pruning for Dots & Boxes
+- Applied A* search with heuristic design for Peg Solitaire
+- Used a genetic algorithm to explore action strategies in MountainCar-v0
+- Included modular boards, heuristic comparisons, and step-by-step visualization
 
 ---
 
-## Other topics
+### Paradigms & Languages
+[Repository](https://github.com/Guti2010/Paradigmas) • **Scheme** • **Prolog** • **Bash**
 
-- 🧩 **Ensamblando un sándwich**  
-  [Repository](https://github.com/MoonFoxCake/Ensamblando-un-sandwich) — Educational **transpiler** in **Python**: a small DSL for “sandwich assembly” parsed into executable steps (grammar/rules, token parsing, code emission).
+Repository of projects exploring functional, logic, and scripting paradigms through small practical applications.
 
-- 🖌️ **DIS_prototipo** *(collaborative)*  
-  [Repository](https://github.com/fmasis25/DIS_prototipo) — Lightweight **web prototype** to manage **VIE-TEC project proposals** (create, review, track). Proof-of-concept; no dedicated README yet.
+**Highlights**
+- Built Roman numeral conversion and arithmetic tools in Scheme
+- Developed Prolog projects for fractals, puzzle solving, and family-relation inference
+- Created a Bash-based Wordle-style CLI game with Docker support
+
+---
+
+### Ensamblando un sándwich
+[Repository](https://github.com/MoonFoxCake/Ensamblando-un-sandwich) • **Python** • **DSL** • **Transpiler**
+
+Educational transpiler project that parses a small domain-specific language for sandwich assembly into executable steps.
 
 ---
 

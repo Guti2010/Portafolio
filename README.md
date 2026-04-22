@@ -19,7 +19,7 @@ Full-stack AI recommendation assistant for a LEGO store, designed to help users 
 - Created a React/Vite conversational interface with visual product cards, local chat history, branded styling, and product-level Messenger contact CTA
 - Added an admin workflow to create, edit, activate, deactivate, and reindex products so catalog updates are reflected in the chatbot
 - Containerized the full application with Docker Compose for reproducible local deployment and demo use
-- 
+
 ---
 
 ### Transparency in Political Financing (Costa Rica)

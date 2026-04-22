@@ -8,6 +8,20 @@ This portfolio highlights selected academic and personal projects in software en
 
 ## 🚀 Featured Projects
 
+### LEGO Store Recommendation Chatbot
+[Repository](https://github.com/Guti2010/lego-store) • **Python** • **FastAPI** • **React/Vite** • **SQLite** • **scikit-learn** • **Sentence Transformers** • **Docker**
+
+Full-stack AI recommendation assistant for a LEGO store, designed to help users discover relevant sets through natural-language queries, curated visual recommendations, and catalog management tools.
+
+**Highlights**
+- Built a hybrid recommendation engine combining TF-IDF retrieval, dense semantic embeddings, structured filters, reranking, and result diversification
+- Developed a FastAPI backend with a chatbot recommendation endpoint, SQLite catalog persistence, reindexing support, and admin CRUD APIs
+- Created a React/Vite conversational interface with visual product cards, local chat history, branded styling, and product-level Messenger contact CTA
+- Added an admin workflow to create, edit, activate, deactivate, and reindex products so catalog updates are reflected in the chatbot
+- Containerized the full application with Docker Compose for reproducible local deployment and demo use
+- 
+---
+
 ### Transparency in Political Financing (Costa Rica)
 [Repository](https://github.com/miguelc-14/Proyecto-PIDA) • **Python** • **scikit-learn** • **Streamlit** • **Altair/Plotly** • **ReportLab**
 
@@ -48,7 +62,7 @@ MapReduce-inspired distributed processing engine built from scratch with master,
 ---
 
 ### Administrative Management Platform
-[Repository](https://github.com/LuisFernandoUC/Plataforma-de-Gesti-n-Administrativa) • **Flask** • **React** • **PostgreSQL** • **Docker**
+[Repository](https://github.com/LuisFernandoUC/Plataforma-de-Gesti-n-Administrativa) • **React** • **PostgreSQL** • **Docker**
 
 Role-based web platform designed for the School of Industrial Production at TEC to centralize academic and administrative workflows in a single system.
 
